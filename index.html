@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Absensi Friendship Night</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div class="container" id="loginPage">
+        <h2>Login Friendship Night</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- ABSENSI PAGE -->
+    <div class="container hidden" id="absensiPage">
+        <h2>Absensi Friendship Night</h2>
+
+        <form id="absensiForm">
+            <label>Nama House</label>
+            <input type="text" required>
+
+            <label>Umpan Balik Tampilan</label>
+            <textarea required></textarea>
+
+            <label>Rating Penampilan</label>
+            <select required>
+                <option value="">Pilih Rating</option>
+                <option>⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐⭐</option>
+            </select>
+
+            <label>Kelebihan</label>
+            <textarea required></textarea>
+
+            <label>Kekurangan</label>
+            <textarea required></textarea>
+
+            <button type="submit">Kirim Absensi</button>
+        </form>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
